@@ -4,11 +4,11 @@ let monthNames = ["January", "February", "March", "April", "May", "June", "July"
     "August", "September", "October", "November", "December"];
 let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-// (async function () {
-//     let req = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=cairo&days=7`)
-//     let weather = await req.json()
-//     display(weather);
-// })();
+(async function () {
+    let req = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=cairo&days=7`)
+    let weather = await req.json()
+    display(weather);
+})();
 
 
 navigator.geolocation.getCurrentPosition(showPosition)
