@@ -53,12 +53,12 @@
 
     <section class="mainColor bg py-5">
 
-        <div class="container position-relative">
+        <div class="container">
             <div class="morePadding pb-5">
                 <div class="morePadding pb-5">
                     <form action="" class="py-5">
                         <div class="mainColor rounded-5 d-flex position-relative mb-5">
-                            <input type="text" class="text-white bg-transparent w-100 none py-3 px-4"
+                            <input id="locationInput" type="text" class="text-white bg-transparent w-100 none py-3 px-4"
                                 placeholder="Find your location...">
                             <button class="form-control position-absolute rounded-5 bg-primary">Find</button>
                         </div>
@@ -66,9 +66,17 @@
                 </div>
             </div>
 
-            <div class="row text-white g-0">
 
-                <div class="col-md-4">
+
+        </div>
+
+    </section>
+
+    <section class="mainColor ">
+        <div class="container position-relative">
+            <div id="body" class="forecast row text-white g-0 translate-middle-y">
+
+                <!-- <div class="col-md-4">
 
                     <div class="cardHead p-2 px-3 rounded-top-2 d-flex mainGray">
                         <p class="m-0 p-0">Sunday</p>
@@ -78,7 +86,7 @@
                     <div class="cardBody p-3 px-4 mainColorLighter">
                         <p class="fs-5 mainGray">Cairo</p>
                         <p class="fa-5x fw-bold">41°C</p>
-                        <span><img src="" alt=""></span>
+                        <p><img src="" alt=""></p>
                         <span class="text-primary">Sunny</span>
                     </div>
 
@@ -123,20 +131,19 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
             </div>
-
         </div>
-
     </section>
 
-    <footer class="mainColorLighter py-5">
+
+    <footer class="mainColorLighter pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
 
-                    <div class="mainColor rounded-5 d-flex position-relative mb-5">
+                    <div class="mainColor rounded-5 d-flex position-relative mb-4">
                         <input type="text" class="text-white bg-transparent w-100 none py-3 px-4"
                             placeholder="Enter your email to subscrive...">
                         <button class="form-control position-absolute rounded-5 bg-primary">Subsribe</button>
@@ -144,16 +151,20 @@
 
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 iContainer mb-4">
                     <div class="d-flex align-items-center justify-content-center">
-                        <a href=""> <i
-                                class="fa-brands fa-facebook-f p-3 rounded-circle mainColor text-primary mx-1"></i></a>
-                        <a href=""> <i
-                                class="fa-brands fa-twitter p-3 rounded-circle mainColor text-primary mx-1"></i></a>
-                        <a href=""> <i
-                                class="fa-brands fa-google p-3 rounded-circle mainColor text-primary mx-1"></i></a>
-                        <a href=""> <i
-                                class="fa-brands fa-pinterest p-3 rounded-circle mainColor text-primary mx-1"></i></a>
+                        <a href="">
+                            <i class="first fa-brands fa-facebook-f mainColor rounded-circle text-primary mx-1"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter rounded-circle mainColor text-primary mx-1"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-google rounded-circle mainColor text-primary mx-1"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-pinterest rounded-circle mainColor text-primary mx-1"></i>
+                        </a>
                     </div>
                 </div>
 

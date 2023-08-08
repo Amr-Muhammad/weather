@@ -1,16 +1,4 @@
-@media (min-width:1400px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 1150px
-    }
-}
-
-body{
+body {
     font-family: "Roboto", "Open Sans", sans-serif;
 }
 
@@ -30,33 +18,29 @@ body{
 .nav-link {
     transition: none;
     margin: 0px 5px;
+    border: 2px solid;
+    border-color: transparent;
+    padding: 0px;
+    border-radius: 20px;
+
+
 }
 
 .nav-link:hover {
-    border: 2px solid rgb(72, 72, 255);
-    border-radius: 20px;
-    color: rgb(72, 72, 255) !important;
-    padding: 0px;
+    color:#009AD8 !important;
     animation: animate 0.5s ease forwards;
+    border-color:#009AD8;
+    transition: all 0.7s;
 }
 
 .active {
-    border: 2px solid rgb(72, 72, 255);
+    border: 2px solid#009AD8;
     border-radius: 20px;
     padding: 0px;
-    color: rgb(72, 72, 255) !important;
+    color:#009AD8 !important;
     padding: 0px 30px !important;
 }
 
-@keyframes animate {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 .avtive {
     border: 2px solid blue;
@@ -93,30 +77,61 @@ body{
     color: #BFC1BF;
 }
 
-.cardTail img{
+.cardTail img {
     width: 20px;
 }
 
 
-.height{
+.height {
     height: 50%;
 }
 
-i:hover{
+i:hover {
     background-color: #009AD8;
     color: white !important;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
-.fs-sm{
-font-size: 12px;
+.fs-sm {
+    font-size: 12px;
 }
 
 
-.middleDiv{
+.middleDiv {
     background-color: #262936;
 }
 
-.middleDiv .cardHead{
+.middleDiv .cardHead {
     background-color: #222530;
+}
+
+.iContainer i {
+    padding: 18px;
+    width: 50px;
+    height: 50px;
+}
+
+
+@media (min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1150px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .forecast {
+        transform: translate(0, -20%) !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 767px;
+    }
 }
