@@ -14,7 +14,6 @@ let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 navigator.geolocation.getCurrentPosition(showPosition)
 
 
-
 async function showPosition(position) {
     let req = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${position.coords.latitude},${position.coords.longitude}&days=7`)
     let weather = await req.json()
@@ -45,12 +44,12 @@ function display(weather) {
     let nextnextDay = dayNames[dayCounter + 2]
 
     if (dayCounter == 6) {
-        nextDay = 0
-        nextnextDay = 1
+        nextDay = dayNames[0]
+        nextnextDay = dayNames[1]
     }
+
     else if (dayCounter == 5) {
-        nextDay = 6
-        nextnextDay = 0
+        nextnextDay = dayNames[0]
     }
 
     let cartona = ""
@@ -59,7 +58,7 @@ function display(weather) {
 
 <div class="cardHead p-2 px-3 d-flex mainGray">
     <p class="m-0 p-0">${currentDay}</p>
-    <p class="ms-auto p-0 m-0">${weather.location.localtime.slice(8,10)} ${monthNames[monthCounter]}</p>
+    <p class="ms-auto p-0 m-0">${weather.location.localtime.slice(8, 10)} ${monthNames[monthCounter]}</p>
 </div>
 
 <div class="cardBody p-3 px-4 mainColorLighter">
